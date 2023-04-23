@@ -3219,3 +3219,23 @@ input, select, textarea {
 			}
 
 	}
+
+/* Define the class for the sidebar */
+.sidebar {
+	padding: 0;
+	margin: 0;
+  }
+  
+  /* Remove default bullet points from the list items in the sidebar */
+  .sidebar ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  /* Prevent link color changes in the sidebar */
+  .sidebar a {
+	text-decoration: none;
+	color: inherit;
+  }
+  
