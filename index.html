@@ -91,17 +91,17 @@
 				<div class="inner">
 					<h4>Software Engineer at Amazon Web Service</h4>
 					<ul>
-						<!-- <li>
-							Contributed to the development and enhancement of the S3 Glacier team, focusing on optimizing storage solutions and improving system performance.
-						</li> -->
 						<li>
-							Leveraged AWS services such as Lambda for serverless execution, S3 for log storage, and IAM for secure access management.
+							Redesigned Free Zone Allocation strategy in Kotlin, a core component for S3 Glacier customer retrievals, standardizing read throughput and reducing tail latency to improve fairness, scalability, and overall system reliability. Validated with comprehensive unit, plugin, and reference tests in production.
 						</li>
 						<li>
-							Designed and implemented a flow operations bot to automate log retrieval from CloudWatch, streamlining troubleshooting and monitoring processes.
+							 Built a standalone storage service on EC2 to validate SCSI read/write operations, enabling Glacier deployment on hardware in regions without legacy network support. This milestone expanded global availability, reduced dependency on legacy infrastructure, and ensured reliable data access for all customers.
 						</li>
 						<li>
-							Expanded bot functionality by integrating support for multiple ticket types, significantly reducing on-call workload and improving operational efficiency.
+							Developed an automated operational service to generate CloudWatch queries, retrieve logs, and post results directly to tickets, reducing on-call issue resolution time by 30% and improving debugging efficiency.
+						</li>
+						<li>
+							Implemented secure, low-latency serverless workflows using AWS Lambda, S3, DynamoDB, and IAM, supporting production-scale workloads with strong data integrity guarantees.
 						</li>
 				</div>
 				<img src="images/RecRoom.png" width="150" alt="" />
@@ -112,17 +112,17 @@
 							Worked on the UGC > Logic team for the virtual reality gaming startup.
 						</li>
 						<li>
-							Create an undo system for the maker pen in wiring chips that guarantees the accurate restoration of circuit connections upon undoing wire-related actions. (The circuit is a visual programming tool for UGC content <a href=https://recroom.com/cv2 />[link]</a>).
-						</li>
-				</div>
-				<div class="inner">
-					<h4>Software Engineer Intern at Rec Room</h4>
-					<ul>
-						<li>
-							Developed over 20 chips using C# and Git version control for Rec Room's CircuitV2 System, including Synced Delay Chip and Player Gaze Chip.
+							Developed 20+ production-ready logic “chips” in C# for the CircuitV2 visual programming system, enabling dynamic and interactive VR experiences for creators. <a href=https://recroom.com/cv2 />[link]</a>).
 						</li>
 						<li>
-							Created a tool prefab named "Motion Trail," which utilized Protobuf for Serialization and Photon Unity Networking (PUN) for Synchronization. The purpose of this tool was to enhance the visual appeal of moving objects.
+							Designed and implemented a robust Undo/Redo system for maker-pen wiring, ensuring deterministic restoration of circuit connections and providing maintainable API specifications.
+							
+						</li>
+						<li>
+							Created the Motion Trail prefab tool using Protobuf (serialization) and Photon Networking (real-time sync), enriching the visual experience of moving objects in multiplayer VR.
+						</li>
+						<li>
+							Leveraged CI/CD workflows Azure DevOps, and managed tasks in Jira, enabling efficient collaboration and consistent release quality.
 						</li>
 						<li>
 							Deploy builds on Steam using Jenkins, and collaborated with a team of developers and designers to playtest new features in both screen and VR mode.
@@ -131,16 +131,16 @@
 
 				<img src="images/apple.png" width="80" alt="" />
 				<div class="inner">
-					<h4>Machine Learning Engineer Intern at Apple Inc.</h4>
+					<h4>Machine Learning Engineer Intern at Apple</h4>
 					<ul>
 						<li>
-							Developed a distributed training process using gRPC, featuring a remote validator and data server, which increased the data processing speed by around 10%.
+							Built distributed training infrastructure using Python and gRPC, enabling multi-GPU training, remote validation, and centralized data serving, increasing data throughput by 20%.
 						</li>
 						<li>
-							Constructed a robust pipeline to create real-time physical simulation datasets, and implemented a dedicated training monitor for self-learning and reinforcement.
+							Developed a containerized simulation data pipeline with Docker and S3, supporting real-time reinforcement learning workflows.
 						</li>
 						<li>
-							The generated base model that can be efficiently fine-tuned for specific task, reducing the need for extensive data and enhancing performance.
+							Trained a foundation model for FEA simulations in PyTorch, achieving a 5% reduction in Mises Stress Loss and faster convergence on general simulation tasks.
 						</li>
 				</div>
 				
