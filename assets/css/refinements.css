@@ -1,0 +1,226 @@
+/* =============================================
+   Refinements — portfolio polish
+   ============================================= */
+
+/* --- Sidebar nav in header --- */
+.sidebar {
+	margin-top: 1.5em;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar ul li {
+	margin: 0.4em 0;
+}
+
+.sidebar ul li a {
+	color: rgba(255, 255, 255, 0.55);
+	text-decoration: none;
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	transition: color 0.2s ease;
+}
+
+.sidebar ul li a:hover {
+	color: #ffffff;
+}
+
+/* --- Intro list --- */
+.intro-list {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1.5em 0;
+}
+
+.intro-list li {
+	padding: 0.35em 0;
+	line-height: 1.6;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.intro-list li:last-child {
+	border-bottom: none;
+}
+
+/* --- Work entries --- */
+.work-entry {
+	display: flex;
+	gap: 1.5em;
+	align-items: flex-start;
+	padding: 1.75em 0;
+	border-bottom: 1px solid #efefef;
+}
+
+.work-entry:last-child {
+	border-bottom: none;
+}
+
+.work-logo {
+	flex-shrink: 0;
+	width: 80px;
+	display: flex;
+	align-items: flex-start;
+	padding-top: 0.25em;
+}
+
+.work-logo img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.work-details {
+	flex: 1;
+}
+
+.work-details h4 {
+	margin: 0 0 0.25em 0;
+	font-size: 1em;
+	font-weight: 700;
+	color: #333;
+}
+
+.work-meta {
+	display: block;
+	font-size: 0.8em;
+	color: #888;
+	margin-bottom: 0.75em;
+}
+
+.work-details ul {
+	list-style: disc;
+	padding-left: 1.25em;
+	margin: 0;
+}
+
+.work-details ul li {
+	margin-bottom: 0.4em;
+	line-height: 1.6;
+	font-size: 0.9em;
+	color: #555;
+}
+
+/* --- Project links --- */
+.project-links a {
+	margin-right: 0.5em;
+	font-size: 0.85em;
+}
+
+/* --- Education entries --- */
+.edu-entry {
+	display: flex;
+	gap: 1.5em;
+	align-items: flex-start;
+	padding: 1.75em 0;
+	border-bottom: 1px solid #efefef;
+}
+
+.edu-entry:last-child {
+	border-bottom: none;
+}
+
+.edu-logo {
+	flex-shrink: 0;
+	width: 80px;
+	display: flex;
+	align-items: flex-start;
+	padding-top: 0.25em;
+}
+
+.edu-logo img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.edu-logo-placeholder {
+	width: 80px;
+}
+
+.edu-details {
+	flex: 1;
+}
+
+.edu-details h4 {
+	margin: 0 0 0.2em 0;
+	font-size: 1em;
+	font-weight: 700;
+	color: #333;
+}
+
+.edu-degree {
+	font-size: 0.85em;
+	color: #666;
+	margin: 0 0 0.75em 0;
+}
+
+.course-columns {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em 2em;
+}
+
+.course-group {
+	min-width: 160px;
+}
+
+.course-label {
+	display: block;
+	font-size: 0.78em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	color: #888;
+	margin-bottom: 0.4em;
+}
+
+.course-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.course-list li {
+	font-size: 0.82em;
+	color: #555;
+	line-height: 1.7;
+}
+
+/* --- Section headings --- */
+#main > section h3 {
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #aaa;
+	margin: 2em 0 1em 0;
+	padding-bottom: 0.4em;
+	border-bottom: 1px solid #efefef;
+}
+
+/* --- Footer alignment fix --- */
+#footer .inner {
+	text-align: center;
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 736px) {
+	.work-entry,
+	.edu-entry {
+		flex-direction: column;
+		gap: 0.75em;
+	}
+
+	.work-logo,
+	.edu-logo {
+		width: 60px;
+	}
+
+	.course-columns {
+		flex-direction: column;
+	}
+}
