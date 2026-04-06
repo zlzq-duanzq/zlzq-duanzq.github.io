@@ -11,6 +11,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="Portfolio of Zhongqian (Henry) Duan — Software Engineer at AWS, M.S. CSE at University of Michigan." />
+	<link rel="icon" type="image/png" href="images/dog.png" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/refinements.css" />
 
@@ -55,10 +56,10 @@
 				<h1>Hello, I'm<br /><span>Zhongqian (Henry) Duan</span></h1>
 			</header>
 			<ul class="intro-list">
-				<li>🔭 M.S. in Computer Science at University of Michigan</li>
 				<li>☁️ Software Engineer at <a href="https://aws.amazon.com/" target="_blank">AWS</a></li>
 				<li>🕹 Ex Software Engineer at <a href="https://recroom.com/" target="_blank">Rec Room</a></li>
-				<li>💻 Ex ML Engineer Intern at <a href="https://github.com/apple" target="_blank">Apple</a> &amp; <a href="https://www.nio.com/" target="_blank">NIO</a></li>
+				<li>💻 Ex Machine Learning Engineer Intern at <a href="https://github.com/apple" target="_blank">Apple</a> &amp; <a href="https://www.nio.com/" target="_blank">NIO</a></li>
+				<li>🔭 M.S. in Computer Science at University of Michigan</li>
 				<li>📚 Dual degree — University of Michigan (B.S. CS) &amp; Shanghai Jiao Tong University (B.S. ECE)</li>
 				<li>🍁 Fun fact: I love 📸 🏓 🍜 🎮</li>
 			</ul>
@@ -75,12 +76,12 @@
 				</div>
 				<div class="work-details">
 					<h4>Software Engineer — Amazon Web Services</h4>
-					<span class="work-meta"><a href="https://aws.amazon.com/s3/storage-classes/glacier/" target="_blank">S3 Glacier</a> Team</span>
+					<span class="work-meta"><a href="https://aws.amazon.com/s3/storage-classes/glacier/" target="_blank">S3 Glacier</a> Team &nbsp;|&nbsp; Oct 2024 – Present</span>
 					<ul>
-						<li>Redesigned Free Zone Allocation strategy in Kotlin, standardizing read throughput and reducing tail latency to improve fairness, scalability, and system reliability.</li>
-						<li>Built a standalone storage service on EC2 to validate SCSI read/write operations, enabling Glacier deployment in regions without legacy network support and expanding global availability.</li>
-						<li>Developed an automated operational service to generate CloudWatch queries, retrieve logs, and post results to tickets — reducing on-call resolution time by 30%.</li>
-						<li>Implemented secure, low-latency serverless workflows using AWS Lambda, S3, DynamoDB, and IAM at production scale.</li>
+						<li>Redesigned the Free Zone Allocation strategy in Kotlin to optimize S3 Glacier retrievals, stabilizing read throughput and mitigating tail latency via a fair resource distribution model that enhanced cross-AZ system reliability.</li>
+						<li>Architected a standalone storage validation stack on EC2 to verify SCSI I/O operations, eliminating dependencies on legacy network infrastructure and enabling S3 Glacier expansion into new global regions with 100% data reliability.</li>
+						<li>Engineered decoupled mapping logic within VirtualTapeHandle to abstract shards from partitions, facilitating adoption of high-density media and next-gen hardware with zero downtime.</li>
+						<li>Architected a serverless, event-driven diagnostics framework using Python, Lambda, CloudWatch, and DynamoDB to ingest real-time failure signals — reducing on-call MTTR by 30%.</li>
 					</ul>
 				</div>
 			</div>
@@ -91,12 +92,11 @@
 				</div>
 				<div class="work-details">
 					<h4>Software Engineer — Rec Room</h4>
-					<span class="work-meta">UGC &gt; Logic Team · VR Gaming</span>
+					<span class="work-meta">VR Gaming &nbsp;|&nbsp; Feb 2024 – Oct 2024 &nbsp;|&nbsp; Jan 2023 – Apr 2023</span>
 					<ul>
-						<li>Developed 20+ production-ready logic "chips" in C# for the <a href="https://recroom.com/cv2" target="_blank">CircuitV2</a> visual programming system, enabling dynamic and interactive VR experiences.</li>
-						<li>Designed and implemented a robust Undo/Redo system for maker-pen wiring, ensuring deterministic restoration of circuit connections.</li>
-						<li>Created the Motion Trail prefab tool using Protobuf (serialization) and Photon Networking (real-time sync) for multiplayer VR.</li>
-						<li>Leveraged CI/CD with Azure DevOps and Jira; deployed builds on Steam via Jenkins.</li>
+						<li>Engineered runtime execution logic for 20+ core components in the <a href="https://recroom.com/cv2" target="_blank">CircuitV2</a> visual scripting engine using C#, extending Turing-complete capabilities available to millions of VR creators.</li>
+						<li>Architected a deterministic state-management system for complex circuit graph connections (Undo/Redo), ensuring atomic restoration of user actions and establishing an extensible API pattern for future tools.</li>
+						<li>Developed a networked visual effect system (Motion Trails) using Protobuf for serialization and Photon for real-time sync, optimizing bandwidth in high-concurrency multiplayer environments.</li>
 					</ul>
 				</div>
 			</div>
@@ -107,7 +107,7 @@
 				</div>
 				<div class="work-details">
 					<h4>Machine Learning Engineer Intern — Apple</h4>
-					<span class="work-meta">AIML</span>
+					<span class="work-meta">AIML &nbsp;|&nbsp; May 2023 – Sep 2023</span>
 					<ul>
 						<li>Built distributed training infrastructure using Python and gRPC, enabling multi-GPU training and centralized data serving — increasing data throughput by 20%.</li>
 						<li>Developed a containerized simulation data pipeline with Docker and S3, supporting real-time reinforcement learning workflows.</li>
@@ -122,11 +122,10 @@
 				</div>
 				<div class="work-details">
 					<h4>Machine Learning Engineer Intern — NIO</h4>
-					<span class="work-meta">Autonomous Driving</span>
+					<span class="work-meta">Autonomous Driving &nbsp;|&nbsp; May 2021 – Aug 2021</span>
 					<ul>
-						<li>Participated in the NIO black-box project testing the full autonomous driving system with on-screen video.</li>
-						<li>Designed and optimized a 3D Object Tracking Network for autopilot, improving precision by 4%.</li>
-						<li>Applied MaskRCNN with multiple backbones to detect vehicles and lane lines across 2000+ on-screen videos.</li>
+						<li>Optimized production ML pipelines for 3D object tracking using PyTorch, achieving a +4% increase in F1 score by refactoring deep learning architectures for better feature extraction.</li>
+						<li>Engineered an automated evaluation framework to process 200+ hours of autonomous driving footage, utilizing Mask R-CNN to accelerate dataset validation and reduce manual labeling overhead.</li>
 						<li>Proposed a lightweight CNN in PyTorch to remove lens distortion effects.</li>
 					</ul>
 				</div>
@@ -140,7 +139,7 @@
 					<h4>Graduate Student Instructor — University of Michigan</h4>
 					<span class="work-meta">EECS 587 Parallel Computing</span>
 					<ul>
-						<li>Led weekly discussion sessions and office hours covering CUDA, OpenMP, and MPI.</li>
+						<li>Led weekly discussions and office hours for 60+ graduate students in EECS 587 Parallel Computing, covering CUDA, OpenMP, and MPI.</li>
 					</ul>
 				</div>
 			</div>
@@ -153,26 +152,26 @@
 			<h3>Game Development</h3>
 			<div class="row">
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="http://www-personal.umich.edu/~duanzq/ZeldaWebBuild/" class="image fit thumb" target="_blank">
+					<a href="https://drive.google.com/drive/folders/1v5-dKiqeGynfURWcZwsv2n6Q6NwcHij3?usp=sharing" class="image fit thumb" target="_blank">
 						<img src="images/Zelda.jpg" alt="The Legend of Zelda" />
 					</a>
 					<h3>The Legend of Zelda</h3>
 					<p>A classic 2D game.</p>
 					<p class="project-links">
-						<a href="http://www-personal.umich.edu/~duanzq/ZeldaWebBuild/" target="_blank">[play online]</a>
-						<a href="https://drive.google.com/drive/folders/1GEUNRIfkF9ygwnHXEIFd2qffrHLFzTJG?usp=sharing" target="_blank">[download]</a>
+						<!-- <a href="http://www-personal.umich.edu/~duanzq/ZeldaWebBuild/" target="_blank">[play online]</a> -->
+						<a href="https://drive.google.com/drive/folders/1v5-dKiqeGynfURWcZwsv2n6Q6NwcHij3?usp=sharing" target="_blank">[download]</a>
 					</p>
 				</article>
 
 				<article class="col-6 col-12-xsmall work-item">
-					<a href="http://www-personal.umich.edu/~duanzq/P2WebBuild/" class="image fit thumb" target="_blank">
+					<a href="https://drive.google.com/drive/folders/1DeV444T5iqZ9ej5Q0a3y0etoWd3l5jm3?usp=sharing" class="image fit thumb" target="_blank">
 						<img src="images/dash.jpg" alt="Molecule Dash" />
 					</a>
 					<h3>Molecule Dash</h3>
 					<p>An original 2D survival game.</p>
 					<p class="project-links">
-						<a href="http://www-personal.umich.edu/~duanzq/P2WebBuild/" target="_blank">[play online]</a>
-						<a href="https://drive.google.com/drive/folders/1Bd3PKlNvkZFchprJpQiOdUD3pRjrZQDu?usp=sharing" target="_blank">[download]</a>
+						<!-- <a href="http://www-personal.umich.edu/~duanzq/P2WebBuild/" target="_blank">[play online]</a> -->
+						<a href="https://drive.google.com/drive/folders/1DeV444T5iqZ9ej5Q0a3y0etoWd3l5jm3?usp=sharing" target="_blank">[download]</a>
 					</p>
 				</article>
 
@@ -186,6 +185,7 @@
 						<a href="https://www.youtube.com/watch?v=ORUvvEXNF_U&ab_channel=SiyiChen" target="_blank">[trailer]</a>
 						<a href="https://wdwdawei.itch.io/asylum-7" target="_blank">[itch.io]</a>
 						<a href="https://www.indiedb.com/members/chicychen/blogs/asylum-7-gold-version-released" target="_blank">[indiedb]</a>
+						<a href="https://drive.google.com/drive/folders/19tqpVue4BAntjGUJz0MaRSeANvv_MPdh" target="_blank">[download]</a>
 					</p>
 				</article>
 
@@ -198,7 +198,7 @@
 					<p class="project-links">
 						<a href="https://www.youtube.com/watch?v=58F60rQYtmo&ab_channel=ZeshengYu" target="_blank">[trailer]</a>
 						<a href="https://github.com/gundyrko/FantasyAR" target="_blank">[github]</a>
-						<a href="https://drive.google.com/drive/folders/1Q-lJnl68Q2LAzSM_28cOCWLWiCWNUfrj" target="_blank">[download]</a>
+						<!-- <a href="https://drive.google.com/drive/folders/1Q-lJnl68Q2LAzSM_28cOCWLWiCWNUfrj" target="_blank">[download]</a> -->
 					</p>
 				</article>
 			</div>
@@ -210,6 +210,7 @@
 						<img src="images/NLP.jpg" alt="NLP Project" />
 					</a>
 					<h3>Text-Image Pair Generation via Pre-trained Vision-Language Models</h3>
+					<p>Built a vision-language dataset generation pipeline using ChatGPT and Midjourney, combining Text-to-Image and Image-to-Text tasks to benchmark captioning models — published on EECS 595 Student Project Gallery.</p>
 					<p class="project-links">
 						<a href="https://github.com/zlzq-duanzq/NLP_proj" target="_blank">[github]</a>
 						<a href="https://sled.eecs.umich.edu/teaching/eecs595_fa22" target="_blank">[website]</a>
@@ -221,35 +222,13 @@
 						<img src="images/net.jpg" alt="High Resolution Demoire" />
 					</a>
 					<h3>High Resolution Demoire</h3>
+					<p>Designed HRDeNet, a deep neural network pipeline (Downsample → Demoire → Super Resolution) to remove moiré patterns from high-resolution images.
 					<p class="project-links">
 						<a href="https://github.com/zlzq-duanzq/HR-Demoire-Test" target="_blank">[github]</a>
 					</p>
 				</article>
 			</div>
 
-			<h3>Web Design</h3>
-			<div class="row">
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="https://mern-memory-duanzq.netlify.app/" class="image fit thumb" target="_blank">
-						<img src="images/memo.jpg" alt="Memories App" />
-					</a>
-					<h3>Memories — Social Media App</h3>
-					<p class="project-links">
-						<a href="https://mern-memory-duanzq.netlify.app/" target="_blank">[live]</a>
-						<a href="https://github.com/zlzq-duanzq/MERN-memories-project" target="_blank">[github]</a>
-					</p>
-				</article>
-
-				<article class="col-6 col-12-xsmall work-item">
-					<a href="https://timely-travesseiro-aa2a28.netlify.app/" class="image fit thumb" target="_blank">
-						<img src="images/store.jpg" alt="Online Store" />
-					</a>
-					<h3>Simple Online Store</h3>
-					<p class="project-links">
-						<a href="https://timely-travesseiro-aa2a28.netlify.app/" target="_blank">[live]</a>
-					</p>
-				</article>
-			</div>
 		</section>
 
 		<!-- Education -->
@@ -262,12 +241,12 @@
 				</div>
 				<div class="edu-details">
 					<h4>University of Michigan, Ann Arbor</h4>
-					<p class="edu-degree">M.S.E. in Computer Science and Engineering &nbsp;|&nbsp; Aug. 2022 – Dec. 2023</p>
+					<p class="edu-degree">M.S.E. in Computer Science and Engineering &nbsp;|&nbsp; GPA:4.00/4.00 &nbsp;|&nbsp; Aug. 2022 – Dec. 2023</p>
 					<div class="course-group">
 						<span class="course-label">Selected Courses</span>
 						<ul class="course-list">
 							<li>Web Systems</li>
-							<li>Computer Networks</li>
+							<li>Computer Networks (A)</li>
 							<li>Randomness &amp; Computation (A)</li>
 							<li>Parallel Computing (A)</li>
 							<li>Natural Language Processing (A)</li>
@@ -282,7 +261,7 @@
 				</div>
 				<div class="edu-details">
 					<h4>University of Michigan, Ann Arbor</h4>
-					<p class="edu-degree">B.S.E. in Computer Science &nbsp;|&nbsp; GPA: 3.98/4.00 &nbsp;|&nbsp; Aug. 2020 – Apr. 2022</p>
+					<p class="edu-degree">B.S.E. in Computer Science &nbsp;|&nbsp; GPA: 3.9/4.0 &nbsp;|&nbsp; Aug. 2020 – May 2022</p>
 					<div class="course-columns">
 						<div class="course-group">
 							<span class="course-label">Artificial Intelligence</span>
@@ -372,7 +351,8 @@
 			<p>Feel free to drop me a message.</p>
 			<div class="row">
 				<div class="col-8 col-12-small">
-					<form method="post" action="#">
+					<form method="post" action="https://formspree.io/f/YOUR_FORM_ID">
+					<input type="hidden" name="_subject" value="New message from portfolio" />
 						<div class="row gtr-uniform gtr-50">
 							<div class="col-6 col-12-xsmall">
 								<input type="text" name="name" id="name" placeholder="Name" />
@@ -399,7 +379,7 @@
 						</li>
 						<li>
 							<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-							<a href="mailto:duanzq@umich.edu">duanzq@umich.edu</a>
+							<a href="mailto:duanzqhenry@gmail.com">duanzqhenry@gmail.com</a>
 						</li>
 					</ul>
 				</div>
@@ -416,7 +396,7 @@
 				<li><a href="https://github.com/zlzq-duanzq" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
 				<li><a href="https://www.instagram.com/duanzq_henry/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
 				<li><a href="https://www.facebook.com/profile.php?id=100082671062536" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-				<li><a href="mailto:duanzq@umich.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="mailto:duanzqhenry@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
 				<li>&copy; Zhongqian Duan</li>
